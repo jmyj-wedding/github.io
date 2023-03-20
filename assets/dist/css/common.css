@@ -1,0 +1,193 @@
+* { box-sizing:border-box;}
+body { overflow-x:hidden; }
+div { margin: 0; padding: 0; }
+
+.topContainer {
+    position: relative;
+    text-align: center;
+    background-size: cover;
+}
+
+.topBox {
+    vertical-align: top;
+    position: relative;
+    max-width: 540px;
+    margin: 0 auto;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.imgBox {
+    position: relative;
+}
+
+.imgBox img {
+    pointer-events: none;
+    object-fit: cover;
+    object-position: 50% 50%;
+    width: 100%;
+    height: 100%;
+    max-width: 540px;
+}
+
+.topContainer .titleBox {
+    position: absolute;
+    left: 70px;
+    bottom: 125px;
+    text-align: center;
+    color: #fff;
+    box-sizing: border-box;
+    display: table;
+    width: 100%;
+}
+
+.topContainer .titleBox .in {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.topContainer .titleBox .topText {
+    opacity: 1;
+    position: relative;
+    display: inline-block;
+    padding-right: 64px;
+    font-family: 'AritaBuri';
+}
+
+.topContainer .titleBox .topText .tit01 {
+    width: 0.8em;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 1.38;
+    padding-right: 44px;
+    margin-right: 18px;
+    float: left;
+    position: relative;
+    z-index: 1;
+    display: block;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+.topContainer .titleBox .topText .tit01 .mb {
+    margin-bottom: 18px;
+    display: block;
+}
+
+.topContainer .titleBox .topText .tit01::before {
+    height: 100%;
+    display: block;
+    content: '';
+    background-color: #fff;
+    width: 3px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: height 1s;
+}
+
+.topContainer .titleBox .topText .tit02 {
+    width: 1.15em;
+    font-size: 52px;
+    line-height: 1.1;
+    font-weight: 400;
+    float: left;
+    position: relative;
+    z-index: 1;
+    display: block;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+.titleBox .blast {
+    opacity: 0;
+    will-change: opacity, filter;
+}
+
+.topContainer .titleBox .topText .name {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.topContainer .titleBox .topText .name > span {
+    float: left;
+    position: relative;
+    z-index: 1;
+    display: block;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 400;
+    width: 1.15em;
+}
+
+@media (max-width: 1024px) {
+    .topBox {
+        margin: 0 auto;
+        max-height: 100%;
+    }
+
+    .topContainer .titleBox {
+        position: absolute;
+        left: 40px;
+        bottom: 80px;
+        text-align: center;
+        color: #fff;
+        box-sizing: border-box;
+        display: table;
+        width: 100%;
+    }
+
+    .topContainer .titleBox .in {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: left;
+    }
+
+    .topContainer .titleBox .topText {
+        padding-right: 25px;
+    }
+
+    .topContainer .titleBox .topText .tit01 {
+        width: 0.8em;
+        font-size: 13px;
+        font-weight: 100;
+        line-height: 1.6;
+        padding-right: 30px;
+        margin-right: 15px;
+    }
+
+    .topContainer .titleBox .topText .tit01 .mb {
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .topContainer .titleBox .topText .tit01 ::before {
+        display: block;
+        content: '';
+        background-color: #fff;
+        width: 2px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: height 1s;
+    }
+
+    .topContainer .titleBox .topText .tit02 {
+        width: 1.15em;
+        font-size: 40px;
+        line-height: 1.1;
+        font-weight: 400;
+    }
+
+    .topContainer .titleBox .topText .name > span {
+        font-size: 15px;
+        font-weight: 400;
+        width: 1.15em;
+    }
+}
