@@ -209,8 +209,6 @@ var hauntedText = function (obj, time) {
     }, time);
 };
 
-
-
 $(function () {
     $(window).scrollTop(0);
 
@@ -667,85 +665,6 @@ var DADIDAN = (function () {
     }
 
 }());
-
-
-// var DADIDAN = (function(){
-//     var $wrap = $('.wrap'),
-//         controller,
-//         moveFlag = false;
-
-//     var posx;
-//     var posy;
-//     var pos_val1= 0, pos_val2= 0, pos_val3= 0, pos_val4= 0, pos_val5= 0,
-//          wH = $(window).height();
-
-//     var random = function random(min, max){
-//         return Math.round(min + Math.random()*(max-min));
-//     };
-//     var posXArr=[],
-//          posYArr=[];
-//     var myTimer;
-
-//     function init(){
-//         setTimerMot(pos_val1,0,1.1,40000);
-//         setTimerMot(pos_val2,1,1.1,15000);
-//         setTimerMot(pos_val3,2,1.1,5000);
-//         setTimerMot(pos_val4,3,1.1,60000);
-//         setTimerMot(pos_val5,4,1.1,25000);
-//         /*
-//          setTimerMot(pos_val1,0,1.8,15000);
-//         setTimerMot(pos_val2,1,1.1,8600);
-//         setTimerMot(pos_val3,2,0.9,600);
-//         setTimerMot(pos_val4,3,3,10000);
-//         setTimerMot(pos_val5,4,1.9,900);
-//          * */
-//     }
-
-//     function setTimerMot(pos_val,i,time1,time2){
-// 		myTimer = setTimeout(function() {
-// 		  	randomPos();
-// 	        posXArr.push(posx);
-// 	        posYArr.push(posy);
-// 	        var ranNum = random(0,5);
-// 	       	$('.fixPetalWrap .obj').eq(i).css({'top':posy});
-// 	        TweenMax.fromTo($('.fixPetalWrap .obj').eq(i),10,{x:-20,rotation:-7*ranNum},{x:20,delay:0.2*i,rotation:7*ranNum,repeat: -1,yoyo: true,ease: Power2.easeInOut},{delay:220*i});
-// 	        TweenMax.to($('.fixPetalWrap .obj').eq(i),0.8,{autoAlpha:1,delay:0.4*i});
-
-// 	        setIntervalMot(pos_val,i,time1);
-// 	        //clearTimeout(myTimer);
-// 		}, time2);
-//     }
-
-//     function setIntervalMot(_val,_idx,time){
-//         $('.fixPetalWrap .obj').eq(_idx).hide();
-//         setInterval(function(){
-//             _val += 1;
-//             $('.fixPetalWrap .obj').eq(_idx).show();
-//             if (_val >= wH){
-//                 _val = 0;
-
-//                 $('.fixPetalWrap .obj').eq(_idx).hide();
-//                 randomPos();
-//             }
-
-//             $('.fixPetalWrap .obj').eq(_idx).css({top:_val});
-//         },time*100);
-//     }
-
-//     function randomPos(){
-//         var divsize = (Math.random()*50).toFixed();
-
-//         posx = Number((Math.random() * ($(window).width() - divsize)).toFixed());
-//         posy = Number((Math.random() * ($(window).height() - divsize)).toFixed());
-//     }
-
-//     return {
-//        init : init
-//     }
-
-// }());
-
-// 이미지팝업 열기/닫기 hammer.zoom.js
 
 //공통팝업
 function basePopOpen(idx) {
