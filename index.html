@@ -588,10 +588,12 @@
                 <dl>⊙ 15분 간격으로 운행<br />
                 </dl>
               </div>
-            </div>
-
-            <div id="kakaotalk-sharing-btn">
-
+              <div class="box">
+                <h3 class="tit01">공유하기</h3>
+                <div class="btnLoca">
+                  <a href="#;" class="btns no4" onclick="kakaoShare()"><span>카카오톡</span></a>
+                </div>
+              </div>
             </div>
           </div>
           <!-- //infoLoca -->
@@ -725,37 +727,22 @@
   <script src="./assets/dist/js/hammer.zoom.js"></script>
   <script src="./assets/dist/js/banner.js"></script>
   <script src="./assets/dist/js/CallWeb2App.js"></script>
-  <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=1b3b8b5700601a91de286d9d33ad8b05"></script>
   <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.1.0/kakao.min.js" integrity="sha384-dpu02ieKC6NUeKFoGMOKz6102CLEWi9+5RQjWSV0ikYSFFd8M3Wp2reIcquJOemx" crossorigin="anonymous"></script>
+  <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=1b3b8b5700601a91de286d9d33ad8b05"></script>
+  
 
   <script>
     $(document).bind("contextmenu", function (e) {
         return false;
     });
 
-    $(document).ready(function () {
-      $('.lazy').lazy();
-
-      setTimeout( ()=> {
-        $('.popslide img.lazy').each( function() {
-            $(this).attr('src', $(this).data('src'));
-            $(this).removeAttr('data-src');
-            $(this).removeClass('lazy');
-        });
-      },5000);
-
-      CountDownTimer('2023-06-11T12:30', 'newcountdown');
-
-      Kakao.init('1b3b8b5700601a91de286d9d33ad8b05');
-
-      Kakao.Share.createDefaultButton({
-        container: '#kakaotalk-sharing-btn',
+    function kakaoShare() {
+      Kakao.Share.sendDefault({
         objectType: 'feed',
         content: {
           title: '김지민 ♥ 고윤지, 결혼합니다!',
           description: '소중한 자리에 소중한 분들을 모십니다.',
-          imageUrl:
-            'https://jmyj-wedding.github.io/assets/dist/image/photo/bg_08.jpg',
+          imageUrl: 'https://jmyj-wedding.github.io/assets/dist/image/photo/bg_08.jpg',
           link: {
             mobileWebUrl: 'https://jmyj-wedding.github.io',
             webUrl: 'https://jmyj-wedding.github.io',
@@ -771,6 +758,22 @@
           }
         ],
       });
+    }
+
+    $(document).ready(function () {
+      $('.lazy').lazy();
+
+      setTimeout( ()=> {
+        $('.popslide img.lazy').each( function() {
+            $(this).attr('src', $(this).data('src'));
+            $(this).removeAttr('data-src');
+            $(this).removeClass('lazy');
+        });
+      },5000);
+
+      CountDownTimer('2023-06-11T12:30', 'newcountdown');
+
+      Kakao.init('1b3b8b5700601a91de286d9d33ad8b05');
 
       $(".marqWrap").liMarquee({
         removeContentFadeDuration: 0,
