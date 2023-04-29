@@ -544,7 +544,7 @@ body.snow .fixObWrap .no7 {background:url('../image/snow07.png') center no-repea
 .infoLoca .btnLoca .btns span:before{display: block;content: '';width: 24px;height: 24px;position: absolute;top:50%;left:0;margin-top: -12px;background: url(../image/ico_nav01.png) no-repeat 0 0;}
 .infoLoca .btnLoca .btns.no2 span:before{background-image: url(../image/ico_nav02.png)}
 .infoLoca .btnLoca .btns.no3 span:before{background-image: url(../image/ico_nav03.png)}
-.infoLoca .btnLoca .btns.no4 span:before{background-image: url(https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png); background-size: 24px 24px;}
+.infoLoca .btnLoca .btns.no4 span:before{background-image: url(https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png); background-size: 24px;}
 
 .thanksWrap{background: url(../image/thanks_bg.jpeg) no-repeat 50% 0 / cover;}
 .thanksWrap .thanksInner{padding-top: 98px;padding-bottom: 40px;text-align: center}
