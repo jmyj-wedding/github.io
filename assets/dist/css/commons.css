@@ -90,7 +90,7 @@ body.noScroll {overflow: hidden;position: fixed;width: 100%;height: 100%;}
 
 
 .titleWrap .blast{opacity:0;will-change: opacity, filter;}
-.mainVisual .titleWrap {position: absolute; left:70px; bottom:125px; text-align: center; color:#fff;box-sizing: border-box;display: table;width: 100%;}
+.mainVisual .titleWrap {position: absolute; left:70px; top:75px; text-align: center; color:#fff;box-sizing: border-box;display: table;width: 100%;}
 .mainVisual .titleWrap .in{display: table-cell;vertical-align: middle;text-align: left;}
 .mainVisual .titleWrap .topText {position: relative; display: inline-block;padding-right:64px; font-family: 'AritaBuri';}
 .mainVisual .titleWrap .topText:after,
@@ -103,7 +103,7 @@ body.noScroll {overflow: hidden;position: fixed;width: 100%;height: 100%;}
 .mainVisual .titleWrap .topText .tit01:before{display: block;content: '';background-color: #fff;width:3px;height:0;position: absolute;top:0;right:0;transition: height 1s}
 .mainVisual .titleWrap .topText .tit02 {width: 1.15em;font-size: 52px; line-height: 1;font-weight: 400; }
 .mainVisual .titleWrap .topText .tit02 em {font-weight: 700;}
-.mainVisual .titleWrap .topText .name{position: absolute;bottom: 0;right: 0}
+.mainVisual .titleWrap .topText .name{position: absolute;bottom: 0;right: -70px}
 .mainVisual .titleWrap .topText .name > span{font-size:21px;font-weight: 400;width: 1.15em;}
 
 body.mainLoad .titleWrap .topText  {opacity:1;}
@@ -715,7 +715,7 @@ body.showSlide .popSlide{opacity:1; visibility:visible;}
 .popSlide .swiper-pagination-fraction .swiper-pagination-total{font-family: 'EB Garamond';font-size: 28px;font-weight: 300;color: rgba(255,255,255,.5);font-style: normal;position: relative;top:1px;}
 .popSlide .swiper-pagination-fraction .swiper-pagination-current{color: #fff;font-weight: 700;margin-right: 5px;}
 .popSlide .swiper-pagination-fraction .swiper-pagination-total{margin-left: 8px}
-.popSlide .closeSlide{display: block; background-image:url(../image/icon_close_white.png);}
+.popSlide .closeSlide{display: block; background-image:url(../image/icon_close_white_m.png);}
 
 /* youtubeBox */
 body.showYoutube{overflow-y:hidden;}
@@ -724,7 +724,7 @@ body.showYoutube .youtubeBox{display: block;}
 .youtubeBox .in{position: absolute; left:50%; top:50%; width: 100%; max-width:1280px; transform:translate(-50%,-50%);padding:0 20px;}
 .youtubeBox .inFrame {position: relative; padding-bottom: 56.25%; background:#000;}
 .youtubeBox .inFrame iframe{position: absolute; left:0; top:0;width: 100%; height: 100%;}
-.youtubeBox .btnMovieClose{background-image:url(../image/icon_close_white.png);}
+.youtubeBox .btnMovieClose{background-image:url(../image/icon_close_white_m.png);}
 
 body.showImg{overflow-y:hidden;}
 body.showImg .popImg{visibility: visible;opacity: 1}
@@ -732,7 +732,7 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 .popImg .in{position: absolute; left:50%; top:50%; width: 100%;height: 100%; max-width:1280px; transform:translate(-50%,-50%);padding:0 20px;}
 .popImg .imageContainer{position: relative;height: 100%;text-align: center;overflow: hidden;display: flex;flex-direction: column;align-items: center;justify-content: center;}
 .popImg img{max-width:100%;max-height: 100%;object-fit: cover;object-position: 50% 50%;cursor: move;touch-action: none;}
-.popImg .btnClose{background-image:url(../image/icon_close_white.png);}
+.popImg .btnClose{background-image:url(../image/icon_close_white_m.png);}
 .popImg .btnDownload{background-image:url(../image/icon_download.png);right: 110px}
 
 .alertPop {position: fixed; left:0; top:0; width: 100%; height: 100%;display: none;z-index: 999;}
