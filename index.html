@@ -11,7 +11,7 @@
   <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1, minimum-scale=1.0, width=device-width">
   <meta property="og:title" content="김지민 ♥ 고윤지, 결혼합니다!">
   <meta property="og:description" content="저희 두 사람의 특별한 소식을 전합니다.">
-  <meta property="og:image" content="https://wedding.dddproject.com/data/file/order_form/2113089417_snaZV47p_e69f69b4937f1060a0fe64badd9effc58c9024e4.jpg">
+  <meta property="og:image" content="https://jmyj-wedding.github.io/assets/dist/image/photo/og_photo.jpg">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/dist/image/apple-touch-icon.png">
@@ -589,6 +589,10 @@
                 </dl>
               </div>
             </div>
+
+            <div id="kakaotalk-sharing-btn">
+
+            </div>
           </div>
           <!-- //infoLoca -->
         </div>
@@ -743,6 +747,30 @@
       CountDownTimer('2023-06-11T12:30', 'newcountdown');
 
       Kakao.init('1b3b8b5700601a91de286d9d33ad8b05');
+
+      Kakao.Share.createDefaultButton({
+        container: '#kakaotalk-sharing-btn',
+        objectType: 'feed',
+        content: {
+          title: '김지민 ♥ 고윤지, 결혼합니다!',
+          description: '소중한 자리에 소중한 분들을 모십니다.',
+          imageUrl:
+            'https://jmyj-wedding.github.io/assets/dist/image/photo/bg_08.jpg',
+          link: {
+            mobileWebUrl: 'https://jmyj-wedding.github.io',
+            webUrl: 'https://jmyj-wedding.github.io',
+          },
+        },
+        buttons: [
+          {
+            title: '청첩장 보기',
+            link: {
+              mobileWebUrl: 'https://jmyj-wedding.github.io',
+              webUrl: 'https://jmyj-wedding.github.io',
+            },
+          }
+        ],
+      });
 
       $(".marqWrap").liMarquee({
         removeContentFadeDuration: 0,

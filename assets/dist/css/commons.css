@@ -92,7 +92,7 @@ body.noScroll {overflow: hidden;position: fixed;width: 100%;height: 100%;}
 .titleWrap .blast{opacity:0;will-change: opacity, filter;}
 .mainVisual .titleWrap {position: absolute; left:70px; top:75px; text-align: center; color:#fff;box-sizing: border-box;display: table;width: 100%;}
 .mainVisual .titleWrap .in{display: table-cell;vertical-align: middle;text-align: left;}
-.mainVisual .titleWrap .topText {position: relative; display: inline-block;padding-right:64px; font-family: 'AritaBuri';}
+.mainVisual .titleWrap .topText {position: relative; display: inline-block;padding-right:64px; font-family: 'AritaBuri'; width: 50%;}
 .mainVisual .titleWrap .topText:after,
 .mainVisual .titleWrap .topText .name:after{display: block;content: '';clear: both}
 .mainVisual .titleWrap .topText .tit01,
@@ -819,9 +819,9 @@ body.showImg .popImg{visibility: visible;opacity: 1}
     .mainImg .date .inner{width: 19px;background-size: 12px 12px;}
     .mainImg .date span{font-size: 10px}
 
-  .mainVisual .titleWrap {position: absolute; left:40px; bottom:80px; text-align: center; color:#fff;box-sizing: border-box;display: table;width: 100%;}
+  .mainVisual .titleWrap {position: absolute; left:70px; top:75px; text-align: center; color:#fff;box-sizing: border-box;display: table;width: 100%;}
   .mainVisual .titleWrap .in{display: table-cell;vertical-align: middle;text-align: left;}
-  .mainVisual .titleWrap .topText {position: relative; display: inline-block;padding-right:25px; font-family: 'AritaBuri';}
+  .mainVisual .titleWrap .topText {position: relative; display: inline-block;padding-right:25px; font-family: 'AritaBuri';width: 65%;}
   .mainVisual .titleWrap .topText:after,
   .mainVisual .titleWrap .topText .name:after{display: block;content: '';clear: both}
   .mainVisual .titleWrap .topText .tit01,
